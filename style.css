@@ -1,0 +1,411 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap);
+*{
+    box-sizing: border-box;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0;
+    zoom: 75%;
+}
+
+/* -----------btn----------- */
+nav{
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    float: left;
+    backdrop-filter: blur(7px);
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 0 3vw;
+    font-size: 0.7vw;
+    font-weight: bold;
+    transition: 0.3s ease;
+    opacity: 0.7;
+    display: inline-block;
+    margin: 0.5vw;
+}
+nav li{
+    display: inline;
+}
+.elo{
+    scale: 1.5;
+}
+.elo:hover{
+    transform: scale(1.2);
+}
+
+/* -----------footer----------- */
+hr{
+    width: 30%;
+}
+footer{
+    text-align: center;
+    clear: both;
+    padding-top: 15vw;
+}
+
+/* -----------about----------- */
+main{
+    float: left;
+    margin-top: 8%;
+    font-size: 1.2vw;
+    margin-left: 10%;
+    width: 80%;
+}
+.abo{
+    width: 50%;
+    float: left;
+}
+.kompik{
+    float: right;
+    display: block;
+    margin-top: 0%;
+    width: 25vw;
+    height: 18vw;
+    margin-right: 10%;
+}
+.kompik img{
+    width: 100%;
+    height: 100%;
+}
+#arrow{
+    width: 3%;
+    margin-left: 48.5%;
+    transition: 0.3s ease;
+}
+#arrow:hover{
+    transform: scale(1.2);
+}
+
+/* -----------skills----------- */
+.skills{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 40%;
+}
+.kolo{
+    padding: 1.2vw;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0.3px lightgray;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    margin: 0.5vw;
+    margin-right: 2.5vw;
+    justify-content: center;
+    align-items: center;
+}
+.kolo img{
+    height: 2.8vw;
+    width: 2.8vw;
+    transition: 0.3s ease;
+}
+.skills2{
+    margin-top: 1vw;
+    display: flex;
+    justify-content: right;
+    border: 1px solid black;
+    width: 40%;
+}
+.skills p{
+    padding: 0.5vw;
+    margin-right: 0.5vwx;
+    text-align: right;
+}
+.skills2 p{
+    padding: 0.5vw;
+    margin-right: 0.5vw;
+    display: block;
+    float: right;
+    margin-left: 9vw;
+}
+.kolo:hover img{
+    transform: scale(1.2);
+}
+
+/* -----------projects----------- */
+#projekt{
+    padding-bottom: 2.5vw;
+}
+.prace{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13vw, 1fr));
+    grid-gap: 2vw;
+    margin-top: 2.5vw;
+}
+.work{
+    border-radius: 3%;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 3%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), lightblue);
+    border-radius: 3%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2vw;
+    text-align: center;
+    color: white;
+    font-size: 0.7vw;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.cert h4{
+    margin-left: 30px;
+}
+.cert2 img{
+    width: 31vw;
+    border: black 2px solid;
+    height: 18vw;
+}
+.cert{
+    float: left;
+    width: 50%;
+    display: flex;
+}
+.cert2{
+    float: left;
+    width: 50%;
+    display: flex;
+}.cert2 h4{
+    margin-left: 1.5vw;
+}
+.cert img{
+    width: 18vw;
+    height: 18vw;
+}
+
+
+/* -----------contact----------- */
+.form form{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    gap: 1vw;
+    float: left;
+    display: flex;
+}
+.form input, select, textarea{
+    padding: 1.1vw;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 1.5vw;
+}
+.form textarea{
+    height: 10vw;
+}
+.form button{
+    width: 10vw;
+    padding:  1.1vw;
+    cursor: pointer;
+    background: navy;
+    color: white;
+    font-size: 1.5vw;
+}
+#tel{
+    float: right;
+    width: 18vw;
+    height: 23vw;
+    display: block;
+    margin-right: 10%;
+}
+
+/* --------media--------- */
+@media only screen and (max-width: 768px) {
+    body {
+        zoom: 100%; /* Adjust the zoom level as needed */
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 0 2vw;
+    }
+
+    main {
+        margin-top: 15%;
+        font-size: 4vw;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .abo {
+        width: 100%;
+    }
+
+    .kompik {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .skills {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .kolo {
+        padding: 3vw;
+        width: 15vw;
+        height: 15vw;
+    }
+    .kolo img{
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .skills2 {
+        width: 90%;
+    }
+
+    .prace {
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+        grid-gap: 5vw;
+    }
+
+    #tel {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .form form {
+        width: 100%;
+    }
+
+    .form input,
+    .form select,
+    .form textarea {
+        padding: 5vw;
+        font-size: 5vw;
+    }
+
+    .form textarea {
+        height: 30vw;
+    }
+
+    .form button {
+        width: 30vw;
+        padding: 5vw;
+        font-size: 5vw;
+    }
+    .exp{
+        display: flex;
+        flex-direction: column;
+    }
+    .cert{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .cert2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .cert img{
+        width: 30vw;
+        height: 30vw;
+        margin: auto;
+    }
+    .cert2 img{
+        height: 30vw;
+        width: 50vw;
+        margin: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    #arrow{
+        width: 20vw;
+        height: 20vw;
+        margin-left: 35vw;
+    }
+    .prace{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .work{
+        width: 60vw;
+        height: 35vw;
+        margin: auto;
+    }
+    .layer h3{
+        font-size: 3vw;
+    }
+    .layer p{
+        font-size: 2vw;
+    }
+    .con{
+        width: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .con img{
+        width: 30%;
+    }
+    h2{
+        text-align: center;
+    }
+    .kompik{
+        margin: 20vw 0;
+        width: 80vw;
+    }
+    form{
+        margin-bottom: 10vw;
+    }
+    nav a{
+        margin: 0 4vw;
+    }
+}
